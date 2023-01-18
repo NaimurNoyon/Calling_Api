@@ -29,7 +29,7 @@ class _HomePageState extends State<HomePage> {
               final color = user.gender == 'male'?Colors.amber : Colors.pink;
               return ListTile(
                 title: Text(user.fullName),
-                subtitle: Text(user.phone),
+                subtitle: Text(user.location.country),
                 tileColor: color,
               );
             }
